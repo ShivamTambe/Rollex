@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbtns{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.navbtn{
+    /* border: 2px solid red; */
+    padding: 5px 15px;
+}
+.navbtn:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.logo{
+    cursor: pointer;
+}

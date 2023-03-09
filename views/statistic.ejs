@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/statistic.css">
+    <title>Stat</title>
+</head>
+
+<body>
+    <%- include('../partials/navbar.ejs'); %>
+    <form action="/stats" method="post">
+        <div class="month">
+            <label for="">Enter Month:</label>
+            <input type="text" name="month" placeholder="Enter Month ">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+        <div class="datastat">
+            <div class="para">
+                <span>Total :</span>
+                <span><%= total %></span>
+            </div>
+            <div class="para">
+                <span>Sold :</span>
+                <span><%= sold %></span>
+            </div>
+            <div class="para">
+                <span>Not Sold :</span>
+                <span><%= notSold %></span>
+            </div>
+        </div>
+    <div class="dataset">
+        <!-- <% data.forEach(element => { %>
+                <div class="new">
+                    <img src=<%= element.image %> alt="">
+                    <h1><%= element.id %></h1>
+                    <h3><%= element.title %></h3>
+                    <p class="price"><%= element.price %></p>
+                    <p class="dis"><%= element.discription %></p>
+                    <p class="category"><%= element.category %></p>
+                    <p class="available"><%= element.sold %></p>
+                    <p class="data"><%= element.dateOfSale %></p>
+                </div>
+              
+        <% }) %> -->
+      </div>
+</body>
+</html>
